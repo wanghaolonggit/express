@@ -1,0 +1,31 @@
+{
+  "name": "star_api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "array-flatten": "^2.1.1",
+    "bignumber": "^1.1.0",
+    "bignumber.js": "^4.0.2",
+    "body-parser": "~1.17.1",
+    "content-disposition": "^0.5.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "encodeurl": "^1.0.1",
+    "escape-html": "^1.0.3",
+    "express": "^4.16.2",
+    "forever-monitor": "^1.7.1",
+    "merge-descriptors": "^1.0.1",
+    "methods": "^1.1.2",
+    "moment": "^2.18.1",
+    "morgan": "~1.8.1",
+    "mysql": "^2.14.1",
+    "path-to-regexp": "^1.7.0",
+    "proto-list": "^1.2.4",
+    "pug": "^2.0.0-rc.3",
+    "serve-favicon": "~2.4.2",
+    "utils-merge": "^1.0.0"
+  }
+}
