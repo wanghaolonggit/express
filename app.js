@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use('/admin',  require('./routes/fans.js'));
+app.use('/api',  require('./routes/fans.js'));
 
 //line
 // catch 404 and forward to error handler

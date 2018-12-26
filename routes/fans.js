@@ -6,14 +6,13 @@ var db = require('../database/mysql.js');
 
 router.get("/status/:star_name", function(req, res, next) {
     //地址栏中的star_name 与 SQL 结合
-    // var sql = util.format(
-    //     `select review from star_fans_status where star_id in(
-    //         select id from star_base_info where name=%s
-    //     )`,
-    //     mysql.escape(req.params.star_name)
-    // );
-     var sql = 
-        `select * from items`;
+    var sql = util.format(
+        `select review from star_fans_status where star_id in(
+            select id from star_base_info where name=%s
+        )`,
+        mysql.escape(req.params.star_name)
+    );
+    
     //打印SQL
     console.log(sql);
 
